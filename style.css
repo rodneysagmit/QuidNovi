@@ -229,6 +229,38 @@ header {
     margin: auto;
 }
 
+.service-section {
+    background-color: #dbd9d1;
+    padding: 2em;
+}
+
+.service-block {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.block-div {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.block {
+    max-width: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.block img {
+    max-width: 100%;
+}
+
 .philosophy-cards {
     display: flex;
     justify-content: space-evenly;
@@ -268,14 +300,13 @@ header {
 
 .text-area {
     max-width: 800px;
-
 }
 
 .call-to-action {
     max-width: 1200px;
     margin: auto;
     padding: 1em;
-    background-color: #5c7278;
+    background-color: #79969e;
     display: flex;
     text-align: center;
     justify-content: center;
