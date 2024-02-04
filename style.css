@@ -273,7 +273,7 @@ header {
 .card {
     width: 370px;
     height: auto;
-    background-color: hsl(0, 10%, 90%);
+    background-color: hsl(0, 0%, 90%);
     border-radius: .8em;
     margin: 0;
     padding: 0;
@@ -306,13 +306,19 @@ header {
     max-width: 1200px;
     margin: auto;
     padding: 1em;
-    background-color: #79969e;
+    background-color: hsl(193, 16%, 55%);
     display: flex;
     text-align: center;
     justify-content: center;
     flex-direction: column;
     border-radius: .8em;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+
+.contact-form {
+    max-width: 1000px;
+    margin: auto;
 }
 
 footer {
