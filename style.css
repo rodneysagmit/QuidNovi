@@ -136,7 +136,7 @@ header {
 .navigation-list {
     list-style-type: none;
     display: flex;
-    gap: 4em;
+    gap: 2em;
 }
 
 .navigation-list li a {
@@ -229,12 +229,18 @@ header {
     max-width: 1200px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     gap: 2em;
     padding: 1em;
+    justify-content: space-evenly;
 }
 
 .about-image-div {
     max-width: 400px;
+}
+
+.about-div {
+    max-width: 700px;
 }
 
 .about-image {
@@ -250,7 +256,12 @@ header {
 .team-div {
     display: flex;
     gap: 2em;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
+.team-div-block {
+    max-width: 600px;
 }
 
 
