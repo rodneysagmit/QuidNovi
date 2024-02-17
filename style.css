@@ -122,6 +122,7 @@ label {
 
 header {
     max-width: 1600px;
+    margin: auto;
 }
 
 .navbar {
@@ -129,7 +130,7 @@ header {
     justify-content: space-between;
     margin-left: 1em;
     align-items: center;
-
+    padding-right: 1em;
 }
 
 .navigation-list {
@@ -227,7 +228,31 @@ header {
 .page-body {
     max-width: 1200px;
     margin: auto;
+    display: flex;
+    gap: 2em;
+    padding: 1em;
 }
+
+.about-image-div {
+    max-width: 400px;
+}
+
+.about-image {
+    width: 100%;
+}
+
+.team-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1em;
+}
+
+.team-div {
+    display: flex;
+    gap: 2em;
+
+}
+
 
 .service-section {
     background-color: #dbd9d1;
@@ -247,14 +272,20 @@ header {
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 2em;
+    align-items:baseline;
 }
 
 .block {
-    max-width: 100px;
+    max-width: 200px;
     display: flex;
     text-align: center;
     justify-content: space-evenly;
     flex-direction: column;
+}
+
+.block-image {
+    width: 100px;
+    margin: auto;
 }
 
 .block img {
