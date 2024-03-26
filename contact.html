@@ -1,34 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Your solution to investing">
+        <link rel="icon" type="image/png" href="assets/iconbg.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Prata&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Quid Novi Acquisitions</title>
+    </head>
 <body>
     <header>
-        <div>
+        <div class="navbar">
             <div>
-                <a href="index.html"><strong>Quid Novi Acquisitions</strong></a>
+                <a href="index.html" class="logo-box">
+                    <img src="assets/iconbg.png" alt="site icon" class="logo">
+                    <label for="logo">Quid Novi Acquisitions</label>
+                </a>
             </div>
-            <div>
-                <nav  class="primary-navigation" id="primary-navigation">
-                    <ul class="navigation-list" role="list" aria-label="Primary">
-                        <li><a href="company.html">Our Company</a></li>
-                        <li><a href="team.html">Our Team</a></li>
-                        <li><a href="advantage.html">Our Advantage</a></li>
-                        <li><a href="loan.html">Loan Terms</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+                <img class="icon-hamburger" src="assets/hamburger.svg" alt="" aria-hidden="true">
+                <img class="icon-close" src="assets/close.svg" alt="" aria-hidden="true">
+                <span class="visually-hidden">Menu</span>
+            </button>
+            <nav  class="primary-navigation" id="primary-navigation">
+                <ul class="navigation-list" role="list" aria-label="Primary">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Company</a></li>
+                    <li><a href="services.html">Our Advantage</a></li>
+                    <li><a href="loan.html">Loan Terms</a></li>
+                    <li><a href="contact.html"><strong>Contact Us</strong></a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <h1>Contact us</h1>
+        <section class="header-section">
+            <h1>Contact</h1>
+        </section>
+        <section>
+            <div class="contact-form">
+                <form action="">
+                    <h4>Contact Form</h4>
+                    <label for="name">Name</label>
+                    <input name="name" type="text" id="name" placeholder="Your Name"/>
+                    <br>
+                    <label for="email">Email</label>
+                    <input name="email" type="email" id="email" placeholder="yourname@email.com" required />
+                    <br>
+                    <label for="phone">Phone</label>
+                    <input name="phone" type="tel" id="phone" aria-label="Please enter your phone number" placeholder="ex. 1 (555) 555-5555"/>
+                    <br>
+                    <label for="message">Details</label>
+                    <textarea name="message" id="message" cols="30" rows="15" placeholder="Please submit your inquiry here." required></textarea>
+                    <input type="hidden" name="_subject" value="New Inquiry for RS Frameworks!">
+                    <input type="hidden" name="_next" value="#">
+                    <br>
+                    <button class="button button1" type="submit">Send Message!</button>
+                </form>
+            </div>
+
+        </section>
     </main>
     <footer>
-
+        <div class="footer-content">
+            <p>Quid Novi Acquisitions LLC</p>
+            <p>&copy; Copyright 2024. All rights reserved.</p>    
+        </div>
     </footer>
 </body>
+
+<script src="main.js"></script>
+
 </html>
